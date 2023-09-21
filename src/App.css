@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+  color: white;
+}
+
+
+/*Header med navigation*/
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: #242424; 
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav-link {
+  text-decoration: none;
+  background-color: #242424;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  margin-right: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50px; 
+  padding: 10px 20px; 
+}
+
+.nav-link:hover {
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+
+/*Intro page*/
+.intro-sec {
+  padding-left: 250px;
+}
+
+
+.intro-sec {
+  display: flex;
+  align-items: center;
+}
+
+.intro-text {
+  flex: 1;
+  font-family: 'Crimson Text', serif;
+}
+
+.intro-img {
+  flex: 0;
+  margin-left: 20px;
+  padding-right: 175px;
+}
+
+.me {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: 'Crimson Text', serif;
+  }
+  
+
+/*Fade in animation på intro teksten - en linje ad gangen*/
+.intro1, .intro2, .intro3 {
+  opacity: 0;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*About side*/
+.headline {
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+
+.skillshead {
+  padding-top: 35px;
+  padding-bottom: 25px;
+  font-family: 'Crimson Text', serif;
+}
+
+
+.skill-name {
+  font-family: 'Crimson Text', serif;
+  font-size: 17px;
+}
+
+
+.progress {
+  background-color: #242424;
+  height: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+.progress-bar-fill {
+  background-color: #e08700;
+  height: 100%;
+  animation: fill 1.5s ease-in-out;
+  width: 0; 
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.progressbars {
+  width: 40%; 
+  margin-left: 40px;
+}
+
+.programs {
+  flex: 1;
+  margin-left: 120px;
+}
+
+
+/*Portfolio page*/
+.websitesHead {
+  font-family: 'Crimson Text', serif;
+  padding-left: 30px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 170px;
+  padding-bottom: 150px;
+}
+
+.wrapper  a {
+  text-decoration: none;
+  font-family: 'Crimson Text', serif;
+  padding: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 25px;
+  position: relative;
+}
+
+.wrapper a span {
+  position: absolute;
+  display: none;
+  z-index: 99;
+  transform: scale(0);
+  overflow: hidden;
+  border: 10px ridge #ffffff;
+}
+
+.wrapper a:hover span {
+  display: block;
+  transform: translate(-30%,-160%) scale(1.5);
+  border-radius: 10px;
+}
+
+.post-title {
+  font-family: 'Crimson Text', serif;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.post-content {
+    display: inline-flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 35px;
+    padding-bottom: 50px;
+}
+
+.wp-image-29 {
+  padding-top: 55px;
+}
+
+
+
+/*Contact page*/
+
+.phoneInfo {
+  display: flex;
+  font-family: 'Crimson Text', serif;
+  padding-bottom: 30px;
+}
+
+.phoneInfo > img {
+  padding-right: 30px;
+}
+
+.emailInfo {
+  display: flex;
+  font-family: 'Crimson Text', serif;
+  padding-bottom: 30px;
+}
+
+.emailInfo > img {
+  padding-right: 30px;
+}
+
+
+
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left; 
+  text-align: left; 
+  font-family: 'Crimson Text', serif;
+}
+
+.formBoxes {
+  display: flex;
+  flex-direction: column;
+  align-items: left; 
+  gap: 10px;
+}
+
+.name {
+  background-color: #242424;
+}
+
+.email{
+  background-color: #242424;
+}
+
+.contactSubject {
+  background-color: #242424;
+}
+
+.textMessage {
+  background-color: #242424;
+}
+
+
+.btn {
+  background-color: #242424;
+  border-color: #e08700;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+
